@@ -8,7 +8,7 @@ import img3 from "../imgs/1000068505.jpg";
 const PhotoCarousel = () => {
   const [currentPhoto, setCurrentPhoto] = useState(0);
   
-  // Placeholder photos - you can replace these with your actual photos
+  // Photos with different aspect ratios
   const photos = [
     {
       src: img1,
@@ -47,23 +47,25 @@ const PhotoCarousel = () => {
         </div>
 
         <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden">
-          <div className="relative h-96 md:h-[500px]">
-            <img
-              src={photos[currentPhoto].src}
-              alt={photos[currentPhoto].caption}
-              className="w-full h-full object-cover transition-all duration-500"
-            />
+          <div className="relative max-w-3xl mx-auto">
+            <AspectRatio ratio={photos[currentPhoto].aspectRatio}>
+              <img
+                src={photos[currentPhoto].src}
+                alt={photos[currentPhoto].caption}
+                className="w-full h-full object-cover transition-all duration-500"
+              />
+            </AspectRatio>
             
             <button
               onClick={prevPhoto}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 transition-all duration-200 hover:scale-110"
+              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 transition-all duration-200 hover:scale-110 z-10"
             >
               <ChevronLeft className="w-6 h-6 text-gray-700" />
             </button>
             
             <button
               onClick={nextPhoto}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 transition-all duration-200 hover:scale-110"
+              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-3 transition-all duration-200 hover:scale-110 z-10"
             >
               <ChevronRight className="w-6 h-6 text-gray-700" />
             </button>
