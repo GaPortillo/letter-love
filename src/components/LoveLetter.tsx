@@ -44,7 +44,7 @@ Gabriel❤️`;
                 <div className="text-center">
                   <Mail className="w-16 h-16 text-red-500 mx-auto mb-4 animate-bounce" />
                   <p className="text-xl text-gray-700 font-medium mb-2">
-                    clique para abrir a cartinha
+                    clique para abrir a carta
                   </p>
                   <div className="flex justify-center space-x-2">
                     <Heart className="w-4 h-4 text-pink-500" fill="currentColor" />
@@ -66,7 +66,7 @@ Gabriel❤️`;
                   </div>
                   <div className="text-center mt-6">
                     <p className="text-sm text-gray-500 italic">
-                      Clique novamente para fechar a cartinha
+                      Clique novamente para fechar a carta
                     </p>
                   </div>
                 </div>
