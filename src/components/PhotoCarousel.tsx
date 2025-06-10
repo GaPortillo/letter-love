@@ -4,6 +4,7 @@ import { ChevronLeft, ChevronRight, Heart } from "lucide-react";
 import img1 from "../imgs/IMG_6595.JPG";
 import img2 from "../imgs/1000034868.jpg";
 import img3 from "../imgs/1000068505.jpg";
+import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 
 const PhotoCarousel = () => {
   const [currentPhoto, setCurrentPhoto] = useState(0);
@@ -12,15 +13,18 @@ const PhotoCarousel = () => {
   const photos = [
     {
       src: img1,
-      caption: "Nossa primeira viagem de muitas ainda ❤️✈️"
+      caption: "Nossa primeira viagem de muitas ainda ❤️✈️",
+      aspectRatio: 4 / 3
     },
     {
       src: img2,
-      caption: "Cada momento com você é precioso ❤️"
+      caption: "Cada momento com você é precioso ❤️",
+      aspectRatio: 4 / 3
     },
     {
       src: img3,
-      caption: "Obrigado por ser meu mundo e meu porto seguro ❤️🌍"
+      caption: "Obrigado por ser meu mundo e meu porto seguro ❤️🌍",
+      aspectRatio: 4 / 3
     },
     ];
 
