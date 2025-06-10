@@ -1,6 +1,9 @@
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Heart } from "lucide-react";
+import img1 from "../imgs/IMG_6595.JPG";
+import img2 from "../imgs/1000034868.jpg";
+import img3 from "../imgs/1000068505.jpg";
 
 const PhotoCarousel = () => {
   const [currentPhoto, setCurrentPhoto] = useState(0);
@@ -8,18 +11,18 @@ const PhotoCarousel = () => {
   // Placeholder photos - you can replace these with your actual photos
   const photos = [
     {
-      src: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&h=600&fit=crop",
-      caption: "Our first adventure together"
+      src: img1,
+      caption: "Nossa primeira viagem de muitas ainda ❤️✈️"
     },
     {
-      src: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=800&h=600&fit=crop",
-      caption: "Every moment with you is perfect"
+      src: img2,
+      caption: "Cada momento com você é precioso ❤️"
     },
     {
-      src: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=800&h=600&fit=crop",
-      caption: "Home is wherever you are"
+      src: img3,
+      caption: "Obrigado por ser meu mundo e meu porto seguro ❤️🌍"
     },
-  ];
+    ];
 
   const nextPhoto = () => {
     setCurrentPhoto((prev) => (prev + 1) % photos.length);
@@ -34,7 +37,7 @@ const PhotoCarousel = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Our Beautiful Memories
+            Momentos ❤️
           </h2>
           <div className="flex justify-center space-x-2">
             <Heart className="w-6 h-6 text-pink-500" fill="currentColor" />

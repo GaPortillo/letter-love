@@ -10,11 +10,11 @@ const Hero = () => {
         </div>
         
         <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-pink-600 via-red-500 to-rose-600 bg-clip-text text-transparent mb-6 animate-fade-in">
-          Happy Valentine's Day
+          Feliz Dia dos Namorados
         </h1>
         
         <p className="text-2xl md:text-3xl text-gray-700 mb-8 font-light animate-fade-in">
-          Celebrating Our Beautiful Love Story
+          Celebrando nossa história de amor
         </p>
         
         <div className="flex justify-center space-x-4 animate-fade-in">

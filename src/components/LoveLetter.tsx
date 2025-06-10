@@ -5,22 +5,27 @@ import { Heart, Mail } from "lucide-react";
 const LoveLetter = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const loveMessage = `My Dearest Love,
+  const loveMessage = `Meu amor,
 
-Every day with you feels like Valentine's Day. You make my world brighter, my heart fuller, and my life complete.
+Cada dia com você é especial. Você faz meu dia mais feliz, meu riso se abrir e faz minha vida ter sentido.
 
-From the moment I wake up to the second I fall asleep, you are the melody that plays in my heart. Your smile is my sunshine, your laugh is my favorite song, and your love is my greatest treasure.
+O Gabriel do passado não tem ideia de como uma brincadeirinha boba de integração na escola faria ele conhecer a pessoa que mudaria sua vida, ou melhor, a completaria.
 
-Thank you for being my partner, my best friend, and my forever Valentine. I love you more than words could ever express.
+Desde então eu sou feliz, sou completo, os dias que passo longe de você sinto que uma parte minha está faltando.
 
-With all my love,
-Forever yours ❤️`;
+Porém, Graças a Deus isso está para mudar, em setembro meu eu vai se sentir completo para sempre, e eu quero que você também se sinta completa ao meu lado, que você se sinta amada, alegre, que nos dias ruins você saiba que vai ter com quem contar, e essa pessoa sou eu meu amor.
+
+Eu te amo❤
+Te espero no altar.
+
+Com amor,
+Gabriel❤️`;
 
   return (
     <section className="py-20 px-4">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-8">
-          A Letter Just For You
+          Uma cartinha para meu amor
         </h2>
         
         <div className="relative">
@@ -39,7 +44,7 @@ Forever yours ❤️`;
                 <div className="text-center">
                   <Mail className="w-16 h-16 text-red-500 mx-auto mb-4 animate-bounce" />
                   <p className="text-xl text-gray-700 font-medium mb-2">
-                    Click to open your love letter
+                    clique para abrir a cartinha
                   </p>
                   <div className="flex justify-center space-x-2">
                     <Heart className="w-4 h-4 text-pink-500" fill="currentColor" />
@@ -61,7 +66,7 @@ Forever yours ❤️`;
                   </div>
                   <div className="text-center mt-6">
                     <p className="text-sm text-gray-500 italic">
-                      Click anywhere to close
+                      Clique novamente para fechar a cartinha
                     </p>
                   </div>
                 </div>
