@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Heart } from "lucide-react";
-import img1 from "../imgs/IMG_6595.JPG";
+import img1 from "../imgs/IMG_6595.jpg";
 import img2 from "../imgs/1000034868.jpg";
 import img3 from "../imgs/1000068505.jpg";
 import { AspectRatio } from "@radix-ui/react-aspect-ratio";
