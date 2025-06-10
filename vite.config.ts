@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
+  base: '/letter-love/',
   assetsInclude: ['**/*.JPG'],
   resolve: {
     alias: {
